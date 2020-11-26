@@ -1,0 +1,26 @@
+// ABSTRACS
+@import 'abstracs/variables';
+@import  'abstracs/functions';
+@import  'abstracs/mixins';
+@import 'abstracs/placeholder';
+
+//BASE
+@import 'base/reset';
+@import  'base/tipografia';
+//COMPONENTS
+@import  'components/botones';
+
+
+//LAYAOUT
+@import  'layaout/footer';
+@import  'layaout/grids';
+@import  'layaout/header';
+@import  'layaout/section1';
+@import  'layaout/section2';
+
+//PAGES
+@import  'pages/proyectos';
+@import  'pages/contactar';
+@import  'pages/index';
+
+
