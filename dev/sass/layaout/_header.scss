@@ -19,6 +19,12 @@
 .menu__icono img{
     height: 65px ;
 }
+.links__logotipo{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 /* HAGA CLIC */
 input:checked ~ .menu__links {
@@ -52,10 +58,13 @@ ul{
 .header{
         flex-direction: row-reverse;
     }
-    input:checked ~ ul.menu__links {
-        left: 50vw ;
-        align-items: flex-end;
+    .links__logotipo{
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
+    
 }
 
 /* DESKTOP */
@@ -73,4 +82,7 @@ ul{
         display: flex;
         justify-content: space-around;
     }
+.links__logotipo{
+    font-size: 18px;
+}
 }

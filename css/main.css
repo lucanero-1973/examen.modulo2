@@ -376,16 +376,52 @@ template {
 /* ******************************** */
 /* ******************************** */
 /* ******************************** */
-/* FOOTER */
+/* BODY */
 /* ******************************** */
 /* ******************************** */
 /* ******************************** */
+body {
+  width: 1366;
+  height: 1024;
+}
+
 /* ******************************** */
 /* ******************************** */
 /* GRIDS */
 /* ******************************** */
 /* ******************************** */
 /* ******************************** */
+.container__section {
+  display: grid;
+  grid-template-columns: 80px 400px 400px 400px 50px;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr 50px;
+}
+
+.section__imagen {
+  grid-column: 2/5;
+  grid-row: 2/7;
+}
+
+.imagen__uno {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.imagen__dos {
+  grid-column: 2/5;
+  grid-row: 3/4;
+}
+
+.imagen__tres {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+.imagen__cuatro {
+  grid-column: 2/5;
+  grid-row: 5/6;
+}
+
 /* ******************************** */
 /* ******************************** */
 /* HEADER */
@@ -407,6 +443,13 @@ template {
 
 .menu__icono img {
   height: 65px;
+}
+
+.links__logotipo {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 /* HAGA CLIC */
@@ -441,9 +484,11 @@ ul {
     flex-direction: row-reverse;
   }
 
-  input:checked ~ ul.menu__links {
-    left: 50vw;
-    align-items: flex-end;
+  .links__logotipo {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 /* DESKTOP */
@@ -461,6 +506,10 @@ ul {
     width: 50vw;
     display: flex;
     justify-content: space-around;
+  }
+
+  .links__logotipo {
+    font-size: 18px;
   }
 }
 /* ******************************** */
